@@ -1,16 +1,16 @@
 var React = require('react');
 
 var MyView = React.createClass({
-    render: function(){
+    render: function () {
         return (
             <div>
-                <p>simplest view.</p>
+                <p>The simplest view</p>
             </div>
         );
     }
 });
 
-function render() {
+function render () {
     return <MyView />;
 }
 module.exports = render;

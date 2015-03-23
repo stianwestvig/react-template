@@ -1,3 +1,5 @@
+'use strict';
+
 var React = require('react');
 
 var HelloMessage = React.createClass({
@@ -5,19 +7,18 @@ var HelloMessage = React.createClass({
         name: React.PropTypes.string,
         number: React.PropTypes.number.isRequired
     },
-    render: function(){
+    render: function () {
         var name = this.props.name;
         var age = this.props.number;
         return (
             <div>
-                <p>hello thare {name}. You are {age} years old.
-                Age required.</p>
+                <p>Hello thare {name}. You are {age} years old.</p>
             </div>
         );
     }
 });
 
 function render() {
-    return <HelloMessage name="Molly bear" number={2} />;
+    return <HelloMessage name="Developer" number={28} />;
 }
 module.exports = render;
